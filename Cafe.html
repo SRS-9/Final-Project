@@ -10,124 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./Cafe.css" />
     <title>Final Project Cafe</title>
-
-    <style>
-      nav,
-      header {
-        background-color: black;
-        color: white;
-        height: 300px;
-      }
-      .menu {
-        text-align: center; /* Aligns items horizontally center */
-      }
-
-      .menu-list {
-        list-style: none;
-        display: flex;
-        justify-content: center; /* Aligns items horizontally center */
-        align-items: center; /* Aligns items vertically center */
-        gap: 100px;
-        font-size: large;
-      }
-
-      .menu-list li {
-        margin: 0 10px; /* Adjust spacing between menu items */
-        text-transform: uppercase;
-      }
-
-      .menu-list .logo {
-        display: flex;
-        align-items: center; /* Align the logo vertically center with menu items */
-      }
-
-      .menu-list .logo img {
-        width: 150px; /* Adjust the width of the logo */
-        height: auto; /* Maintain aspect ratio */
-      }
-
-      header {
-        text-align: center;
-      }
-
-      h1 {
-        margin-top: -20px;
-        padding-top: 135px;
-        margin-bottom: 0;
-      }
-
-      header img {
-        width: 150px;
-        padding-top: 0px;
-      }
-
-      header h3 {
-        font-family: "Cedarville Cursive", cursive;
-        font-size: 30px;
-        padding-top: 5px;
-        margin-top: 0;
-      }
-
-      .image-container {
-        position: relative;
-        /*overflow: hidden;*/
-        width: 50%; /* Adjust the width as needed */
-        margin: 0 auto; /* Center the container */
-      }
-
-      .image-container img {
-        width: 380px;
-        height: 380px;
-        position: absolute; /*(default)*/ /*this will work from the top of the section this class started */
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -180px;
-        z-index: 1;
-      }
-
-      .bread-cards {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        max-width: 1200px; /* Adjust as necessary */
-        padding-top: 200px;
-      }
-
-      .bread-card1 {
-        background-color: #fff;
-        border: 1px solid #d3d3d3; /* Light grey border */
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px;
-        padding: 20px;
-        width: 30%; /* Adjust the width as needed */
-        text-align: center; /* Center the text inside the card */
-      }
-
-      .bread-card1 img {
-        max-width: 100%;
-        height: auto;
-        border-bottom: 1px solid #d3d3d3; /* Light grey line under the image */
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-
-      .bread-card1 h3 {
-        color: #333; /* Dark grey color for the heading */
-        margin-bottom: 10px;
-      }
-
-      .bread-card1 p {
-        color: #666; /* Lighter grey color for the paragraph */
-        font-size: 14px;
-        line-height: 1.6;
-      }
-    </style>
   </head>
   <body>
     <nav class="menu">
-      <ul class="menu-list">
+      <ul class="menu-list-nav">
         <li>Home</li>
         <li>Menu</li>
         <li>Abouts</li>
@@ -141,53 +29,62 @@
         <li>Reservations</li>
         <li>Contact</li>
       </ul>
+      <header>
+        <h1>Welcome to Boulanger Coffee - Bakery Bar</h1>
+        <h3>From Asia with Love</h3>
+        <img class="header-flourish" src="./Images/flourish1.png" alt="" />
+        <section class="image-container">
+          <img
+            src="./Images/French-Bread-Basket-PNG-Free-Download.png"
+            alt="Bread-Basket"
+          />
+        </section>
+      </header>
     </nav>
-    <header>
-      <h1>Welcome to Boulanger Coffee - Bakery Bar</h1>
-      <h3>From Asia with Love</h3>
-      <!-- <img src="./Images/flourish1.png" alt="" /> -->
-      <section class="image-container">
-        <img
-          src="./Images/French-Bread-Basket-PNG-Free-Download.png"
-          alt="Bread-Basket"
-        />
+
+    <section class="carousel">
+      <section class="carousel-cards">
+        <!-- Card 1 -->
+        <section class="bread-card">
+          <img
+            src="./Images/Bread-Sketch1.png"
+            width="150px"
+            alt="Fresh Bakery"
+          />
+          <h3>Fresh Bakery</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </section>
+        <!-- Card 2 -->
+        <section class="bread-card">
+          <img
+            src="./Images/Bread-Sketch2.png"
+            width="150px"
+            alt="Pastry Shop"
+          />
+          <h3>Pastry Shop</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </section>
+        <!-- Card 3 -->
+        <section class="bread-card">
+          <img src="./Images/Bread-Sketch3.png" width="150px" alt="Bread" />
+          <h3>Bread</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </section>
       </section>
-    </header>
-    <section class="bread-cards">
-      <section class="bread-card1">
-        <img src="./Images/Bread-Sketch1.png" alt="" />
-        <h3>Fresh Bakery</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-          ratione sed cupiditate nostrum quaerat culpa, facilis, porro
-          aspernatur molestias maxime quibusdam omnis.
-        </p>
-      </section>
-      <section class="bread-card1">
-        <img src="./Images/Bread-Sketch2.png" alt="" />
-        <h3>Fresh Bakery</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-          ratione sed cupiditate nostrum quaerat culpa, facilis, porro
-          aspernatur molestias maxime quibusdam omnis.
-        </p>
-      </section>
-      <section class="bread-card1">
-        <img src="./Images/Bread-Sketch3.png" alt="" />
-        <h3>Fresh Bakery</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-          ratione sed cupiditate nostrum quaerat culpa, facilis, porro
-          aspernatur molestias maxime quibusdam omnis.
-        </p>
+      <section class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </section>
     </section>
-    <article>
+    <article class="chef-container">
       <section class="chef-image">
-        <img src="#" alt="Chef Image" />
+        <img src="./Images/Chef.png" alt="Chef Image" />
       </section>
       <section class="chef-message">
-        <p>
+        <p class="chef-message-heading">Welcome to Boulanger Coffee</p>
+        <p class="chef-message-quotation">From Asia with Love</p>
+        <p class="chef-message-description">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam
           delectus culpa distinctio voluptatibus nostrum impedit dolore quod qui
           laborum aliquam voluptatem vitae, eos, enim id, unde quam
@@ -195,119 +92,142 @@
         </p>
       </section>
     </article>
+
     <main>
       <section>
         <h2>Our Menu</h2>
         <h6>Delivered with care</h6>
       </section>
       <section class="menu-card">
-        <section calss="menu-heading">
+        <section class="menu-heading">
           <h2>Bread and Coffee</h2>
           <h6>With Bread and Coffee all Sorrows are less.</h6>
         </section>
         <section class="menu-list">
-          <section class="item1">
-            <img src="#" alt="coffee-logo" />
+          <!-- Item 1 -->
+          <section class="item">
+            <img
+              src="https://via.placeholder.com/150x100"
+              alt="Chicken Salad Sandwich"
+            />
             <section class="item-description">
-              <h3>Iced Caramel Macchiato</h3>
+              <h3>Chicken Salad Sandwich</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
-            <span class="price">$3.00</span>
+            <span class="price">$30.00</span>
           </section>
-          <section class="item2">
-            <img src="#" alt="coffee-logo" />
+          <!-- Item 2 -->
+          <section class="item">
+            <img
+              src="https://via.placeholder.com/150x100"
+              alt="Chocolate Cookies"
+            />
             <section class="item-description">
-              <h3>Iced Caramel Macchiato</h3>
+              <h3>Chocolate Cookies</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
-            <span class="price">$3.00</span>
+            <span class="price">$30.00</span>
           </section>
-          <section class="item3">
-            <img src="#" alt="coffee-logo" />
+          <section class="item">
+            <img
+              src="https://via.placeholder.com/150x100"
+              alt="Chocolate Cookies"
+            />
             <section class="item-description">
-              <h3>Iced Caramel Macchiato</h3>
+              <h3>Chocolate Cookies</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
-            <span class="price">$3.00</span>
+            <span class="price">$30.00</span>
           </section>
-          <section class="item4">
-            <img src="#" alt="coffee-logo" />
+          <section class="item">
+            <img
+              src="https://via.placeholder.com/150x100"
+              alt="Chocolate Cookies"
+            />
             <section class="item-description">
-              <h3>Iced Caramel Macchiato</h3>
+              <h3>Chocolate Cookies</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
-            <span class="price">$3.00</span>
+            <span class="price">$30.00</span>
           </section>
-          <section class="item5">
-            <img src="#" alt="coffee-logo" />
+          <section class="item">
+            <img
+              src="https://via.placeholder.com/150x100"
+              alt="Chocolate Cookies"
+            />
             <section class="item-description">
-              <h3>Iced Caramel Macchiato</h3>
+              <h3>Chocolate Cookies</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
-            <span class="price">$3.00</span>
+            <span class="price">$30.00</span>
           </section>
-          <section class="item6">
-            <img src="#" alt="coffee-logo" />
+          <section class="item">
+            <img
+              src="https://via.placeholder.com/150x100"
+              alt="Chocolate Cookies"
+            />
             <section class="item-description">
-              <h3>Iced Caramel Macchiato</h3>
+              <h3>Chocolate Cookies</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
-            <span class="price">$3.00</span>
+            <span class="price">$30.00</span>
           </section>
         </section>
-        <article class="blog-post">
-          <section class="post1">
-            <img src="#" alt="" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              fugit quam illo nostrum quibusdam officia laudantium tempore
-              voluptate, doloribus, eligendi numquam accusantium ex. Doloremque,
-              repudiandae consequatur quasi est quidem explicabo.
-            </p>
-            <h3>Name</h3>
-            <p>Title</p>
-          </section>
-          <section class="post2">
-            <img src="#" alt="" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              fugit quam illo nostrum quibusdam officia laudantium tempore
-              voluptate, doloribus, eligendi numquam accusantium ex. Doloremque,
-              repudiandae consequatur quasi est quidem explicabo.
-            </p>
-            <h3>Name</h3>
-            <p>Title</p>
-          </section>
-          <section class="post3">
-            <img src="#" alt="" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              fugit quam illo nostrum quibusdam officia laudantium tempore
-              voluptate, doloribus, eligendi numquam accusantium ex. Doloremque,
-              repudiandae consequatur quasi est quidem explicabo.
-            </p>
-            <h3>Name</h3>
-            <p>Title</p>
-          </section>
-        </article>
-        <footer>
-          <section>
-            <h2>Contact Us</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-              consectetur maxime error odio, quisquam facere beatae aut fuga
-              sunt cumque, atque perspiciatis nam repellendus labore excepturi
-              impedit id ut molestiae.
-            </p>
-          </section>
-          <section>
-            <h3>Contact Address</h3>
-            <p>Address details</p>
-            <h3>Phone</h3>
-            <p>1234567</p>
-          </section>
-        </footer>
       </section>
+      <article class="blog-post">
+        <section class="post1">
+          <img src="#" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit
+            quam illo nostrum quibusdam officia laudantium tempore voluptate,
+            doloribus, eligendi numquam accusantium ex. Doloremque, repudiandae
+            consequatur quasi est quidem explicabo.
+          </p>
+          <h3>Name</h3>
+          <p>Title</p>
+        </section>
+        <section class="post2">
+          <img src="#" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit
+            quam illo nostrum quibusdam officia laudantium tempore voluptate,
+            doloribus, eligendi numquam accusantium ex. Doloremque, repudiandae
+            consequatur quasi est quidem explicabo.
+          </p>
+          <h3>Name</h3>
+          <p>Title</p>
+        </section>
+        <section class="post3">
+          <img src="#" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit
+            quam illo nostrum quibusdam officia laudantium tempore voluptate,
+            doloribus, eligendi numquam accusantium ex. Doloremque, repudiandae
+            consequatur quasi est quidem explicabo.
+          </p>
+          <h3>Name</h3>
+          <p>Title</p>
+        </section>
+      </article>
+      <footer>
+        <section>
+          <h2>Contact Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            consectetur maxime error odio, quisquam facere beatae aut fuga sunt
+            cumque, atque perspiciatis nam repellendus labore excepturi impedit
+            id ut molestiae.
+          </p>
+        </section>
+        <section>
+          <h3>Contact Address</h3>
+          <p>Address details</p>
+          <h3>Phone</h3>
+          <p>1234567</p>
+        </section>
+      </footer>
     </main>
+
+    <script src="./Cafe.js"></script>
   </body>
 </html>

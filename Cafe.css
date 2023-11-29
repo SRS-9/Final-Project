@@ -1,0 +1,321 @@
+
+nav {
+  background-color: black;
+  color: white;
+  height: 550px;
+}
+.menu {
+  text-align: center; 
+}
+
+.menu-list-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 100px;
+  font-size: large;
+}
+
+.menu-list-nav li {
+  margin: 0 10px; 
+  text-transform: uppercase;
+}
+
+.menu-list-nav .logo {
+  display: flex;
+  align-items: center; 
+}
+
+.menu-list-nav .logo img {
+  width: 150px; 
+  height: auto; 
+}
+
+header {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+header img {
+  width: 150px;
+  padding-top: 0px;
+}
+
+header h3 {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 30px;
+  padding-top: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.chef-message-heading {
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+.chef-message-quotation {
+    font-family: "Cedarville Cursive", cursive;
+  font-size: 30px;
+  margin-top: 0px
+}
+
+.chef-message-description{
+    padding-right: 150px;
+}
+
+.image-container {
+  position: relative;
+  width: 50%; 
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 380px;
+  height: 380px;
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -400px;
+  z-index: 1;
+}
+
+.chef-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chef-message {
+    flex: 1;
+  }
+  
+  .chef-image {
+    margin-right: 20px; 
+  }
+  
+  .chef-image img {
+    max-width: 100%;
+    height: 600px;
+    width: 500px;
+    padding-left: 50px
+  }
+
+.bread-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px; 
+  padding-top: 200px;
+}
+
+.bread-card1 {
+  background-color: #fff;
+  border: 1px solid #d3d3d3; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 30%; 
+  text-align: center; 
+}
+
+.bread-card1 img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #d3d3d3; 
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.bread-card1 h3 {
+  color: #333; 
+  margin-bottom: 10px;
+}
+
+.bread-card1 p {
+  color: #666; 
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 10rem;
+}
+
+
+.carousel-cards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.bread-card {
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0; 
+  width: 100%; 
+}
+
+
+.carousel-dots {
+  text-align: center;
+  padding: 10px 0;
+  display: none; 
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+@media only screen and (min-width: 601px) {
+  .carousel-cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .bread-card {
+    width: auto; 
+  }
+
+  .carousel-dots {
+    display: none; 
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .carousel-cards {
+    flex-direction: column;
+  }
+
+  .carousel-dots {
+    display: block; 
+  }
+
+  .chef-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chef-image {
+    margin-right: 0;
+    margin-bottom: 20px; 
+  }
+}
+
+.menu-card {
+  margin: 2rem auto;
+  background: url("./Images/cafe.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow: hidden; 
+}
+
+.menu-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px; 
+}
+
+
+.menu-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-heading h2,
+.menu-heading h6 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.menu-heading h2 {
+  font-size: 2rem;
+  color: #b85c38;
+}
+
+.menu-heading h6 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 0 8rem;
+}
+
+.menu-list .item {
+  flex-basis: calc(50% - 1rem);
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.menu-list .item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.item-description h3 {
+  font-size: 1.5rem;
+  color: #b85c38;
+  margin-bottom: 0.5rem;
+}
+
+.item-description p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.price {
+  font-size: 1.2rem;
+  color: #b85c38;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .menu-list .item {
+    flex-basis: 100%;
+  }
+}
