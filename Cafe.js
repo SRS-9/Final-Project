@@ -78,6 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
   showTestimonialSlides(currentPost);
 });
 
+document
+  .querySelector(".hamburger-menu")
+  .addEventListener("click", function () {
+    document.querySelector(".mobile-menu-list").classList.toggle("show");
+  });
 
 
 

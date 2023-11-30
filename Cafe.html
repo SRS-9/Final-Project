@@ -14,33 +14,63 @@
     <title>Final Project Cafe</title>
   </head>
   <body>
-    <nav class="menu">
-      <ul class="menu-list-nav">
-        <li>Home</li>
-        <li>Menu</li>
-        <li>Abouts</li>
-        <li class="logo">
-          <img
-            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-bakery-logo-design-template-e979c6db88d6772062e4090687c00b7e_screen.jpg"
-            alt="Logo"
-          />
-        </li>
-        <li>Our BLog</li>
-        <li>Reservations</li>
-        <li>Contact</li>
-      </ul>
-      <header>
+    <header>
+      <nav class="desktop-menu">
+        <ul class="desktop-menu-list">
+          <li>Home</li>
+          <li>Our Blog</li>
+          <li>Abouts</li>
+
+          <li class="logo">
+            <img
+              src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-bakery-logo-design-template-e979c6db88d6772062e4090687c00b7e_screen.jpg"
+              alt="Logo"
+            />
+          </li>
+          <li>Reservations</li>
+
+          <li>Menu</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <!-- Mobile Navbar -->
+      <nav>
+        <section class="mobile-menu">
+          <section class="mobile-menu-logo">
+            <img
+              src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-bakery-logo-design-template-e979c6db88d6772062e4090687c00b7e_screen.jpg"
+              alt="Logo"
+            />
+          </section>
+          <section class="mobile-wrapper">
+            <section class="hamburger-menu">
+              <section class="bar"></section>
+              <section class="bar"></section>
+              <section class="bar"></section>
+            </section>
+          </section>
+        </section>
+        <ul class="mobile-menu-list">
+          <li>Home</li>
+          <li>Menu</li>
+          <li>Abouts</li>
+          <li>Our Blog</li>
+          <li>Reservations</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <section class="hero">
         <h1>Welcome to Boulanger Coffee - Bakery Bar</h1>
         <h3>From Asia with Love</h3>
-        <img class="header-flourish" src="./Images/flourish1.png" alt="" />
+        <img src="./Images/flourish1.png" alt="" />
         <section class="image-container">
           <img
             src="./Images/French-Bread-Basket-PNG-Free-Download.png"
             alt="Bread-Basket"
           />
         </section>
-      </header>
-    </nav>
+      </section>
+    </header>
 
     <section class="carousel">
       <section class="carousel-cards">
@@ -77,8 +107,10 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </section>
     </section>
-    <section class="flourish3">
-      <img src="./Images/flourish3.png" alt="" />
+    <section class="centered-content">
+      <section class="flourish3">
+        <img src="./Images/flourish3.png" alt="" />
+      </section>
     </section>
     <article class="chef-container">
       <section class="chef-image">
@@ -224,24 +256,59 @@
           </section>
         </section>
       </article>
-      <footer>
-        <section>
-          <h2>Contact Us</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-            consectetur maxime error odio, quisquam facere beatae aut fuga sunt
-            cumque, atque perspiciatis nam repellendus labore excepturi impedit
-            id ut molestiae.
-          </p>
-        </section>
-        <section>
-          <h3>Contact Address</h3>
-          <p>Address details</p>
-          <h3>Phone</h3>
-          <p>1234567</p>
-        </section>
-      </footer>
     </main>
+    <section class="reservation-card">
+      <section class="reservation">
+        <h3>Make a Reservation</h3>
+        <h6>From Asia with Love</h6>
+        <img class="reservation-flourish" src="./Images/flourish3.png" alt="" />
+        <p>
+          <b>Working hours:</b> Sunday to Tuesday 8:00 - 24:00. Friday to Sunday
+          8:00 - 3:00
+        </p>
+        <p><b>Address:</b> Online</p>
+      </section>
+      <section class="card">
+        <form action="#" method="post">
+          <section class="form-section">
+            <input type="text" id="name" name="name" required />
+            <label for="name">Name</label>
+          </section>
+          <section class="form-section">
+            <input type="email" id="email" name="email" required />
+            <label for="email">Email</label>
+          </section>
+          <section class="form-section">
+            <input type="date" id="date" name="date" required />
+            <label for="date">Date</label>
+          </section>
+          <section class="form-section">
+            <input type="time" id="time" name="time" required />
+            <label for="time">Time</label>
+          </section>
+          <button type="submit" class="btn">Make Reservation</button>
+        </form>
+      </section>
+    </section>
+    <img src="./Images/googlemap.png" alt="" />
+
+    <footer>
+      <section>
+        <h2>Contact Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+          consectetur maxime error odio, quisquam facere beatae aut fuga sunt
+          cumque, atque perspiciatis nam repellendus labore excepturi impedit id
+          ut molestiae.
+        </p>
+      </section>
+      <section>
+        <h3>Contact Address</h3>
+        <p>Address details</p>
+        <h3>Phone</h3>
+        <p>1234567</p>
+      </section>
+    </footer>
 
     <script src="./Cafe.js"></script>
   </body>
