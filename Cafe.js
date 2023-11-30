@@ -44,6 +44,40 @@ window.addEventListener("resize", () => {
   showSlides(currentCard);
 });
 
+let currentPost = 0;
+
+
+function currentTestimonialSlide(n) {
+  showTestimonialSlides((currentPost = n - 1));
+}
+
+
+function showTestimonialSlides(n) {
+  const postSlides = document.getElementsByClassName("post");
+  const postDots = document.getElementsByClassName("postDot");
+
+  if (n >= postSlides.length) currentPost = 0;
+  if (n < 0) currentPost = postSlides.length - 1;
+
+ 
+    for (let i = 0; i < postSlides.length; i++) {
+      postSlides[i].style.display = "none";
+    }
+    postSlides[currentPost].style.display = "block";
+  
+
+  
+  for (let i = 0; i < postDots.length; i++) {
+    postDots[i].className = postDots[i].className.replace(" active", "");
+  }
+    postDots[currentPost].className += " active";
+
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  showTestimonialSlides(currentPost);
+});
+
 
 
 
