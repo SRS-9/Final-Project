@@ -11,6 +11,14 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
@@ -55,23 +63,20 @@
           </section>
         </section>
         <ul class="mobile-menu-list">
-          <li>Home</li>
-          <li>Menu</li>
-          <li>Abouts</li>
-          <li>Our Blog</li>
-          <li>Reservations</li>
-          <li>Contact</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#reservations">Reservations</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <section id="home" class="hero">
         <h1>Welcome to Boulanger Coffee - Bakery Bar</h1>
-        <h3>From Asia with Love</h3>
+        <p class="hero-caption">From Asia with Love</p>
         <img src="./Images/flourishwhite.png" alt="" />
         <section class="image-container">
-          <img
-            src="./Images/French-Bread-Basket-PNG-Free-Download.png"
-            alt="Bread-Basket"
-          />
+          <img src="./Images/bread basket.png" alt="Bread-Basket" />
         </section>
       </section>
     </header>
@@ -86,7 +91,7 @@
             alt="Fresh Bakery"
           />
           <h3>Fresh Bakery</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
         </section>
         <!-- Card 2 -->
         <section class="bread-card">
@@ -96,13 +101,13 @@
             alt="Pastry Shop"
           />
           <h3>Pastry Shop</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
         </section>
         <!-- Card 3 -->
         <section class="bread-card">
           <img src="./Images/Bread-Sketch3.png" width="150px" alt="Bread" />
           <h3>Bread</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
         </section>
       </section>
       <section class="carousel-dots">
@@ -135,89 +140,161 @@
     </article>
 
     <main>
-      <section id="menu">
-        <section>
-          <h2>Our Menu</h2>
-          <h6>Delivered with care</h6>
-        </section>
+      <section id="menu" class="menu">
         <section class="menu-card">
           <section class="menu-heading">
-            <h2>Bread and Coffee</h2>
-            <h6>With Bread and Coffee all Sorrows are less.</h6>
+            <h2>OUR SPECIAL MENU</h2>
+            <h6 class="menu-caption">Delivered with care</h6>
+            <img src="./Images/flourishwhite.png" width="150px" alt="" />
           </section>
           <section class="menu-list">
-            <!-- Item 1 -->
-            <section class="item">
-              <img
-                src="https://via.placeholder.com/150x100"
-                alt="Chicken Salad Sandwich"
-              />
-              <section class="item-description">
-                <h3>Chicken Salad Sandwich</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <section class="column">
+              <section class="column-heading">
+                <h3>Baked Goods</h3>
+                <p>With bread, all sorrows are less</p>
+                <img
+                  class="reservation-flourish"
+                  src="./Images/Reservationflourish.png"
+                  alt=""
+                  width="150px"
+                />
               </section>
-              <span class="price">$30.00</span>
+              <section class="menu-item-bordered">
+                <img
+                  src="./Images/Cookie.png"
+                  alt="Chicken Salad Sandwich"
+                  width="150px"
+                  height="100px"
+                />
+                <section class="item-description">
+                  <p class="menu-title">Chicken Salad Sandwich</p>
+                  <p class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </section>
+                <span class="price">$30.00</span>
+              </section>
+              <section class="menu-item-bordered">
+                <img
+                  src="./Images/Crossiant.png"
+                  alt="Chicken Salad Sandwich"
+                  width="150px"
+                  height="100px"
+                />
+                <section class="item-description">
+                  <p class="menu-title">Chicken Salad Sandwich</p>
+                  <p class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </section>
+                <span class="price">$30.00</span>
+              </section>
+              <section class="menu-item-bordered">
+                <img
+                  src="./Images/Muffin.png"
+                  alt="Chicken Salad Sandwich"
+                  width="150px"
+                  height="100px"
+                />
+                <section class="item-description">
+                  <p class="menu-title">Chicken Salad Sandwich</p>
+                  <p class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </section>
+                <span class="price">$30.00</span>
+              </section>
+              <section class="menu-item-no-border">
+                <img
+                  src="./Images/Coffee.png"
+                  alt="Chicken Salad Sandwich"
+                  width="150px"
+                  height="100px"
+                />
+                <section class="item-description">
+                  <p class="menu-title">Chicken Salad Sandwich</p>
+                  <p class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </section>
+                <span class="price">$30.00</span>
+              </section>
             </section>
-            <!-- Item 2 -->
-            <section class="item">
-              <img
-                src="https://via.placeholder.com/150x100"
-                alt="Chocolate Cookies"
-              />
-              <section class="item-description">
-                <h3>Chocolate Cookies</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <section class="column">
+              <section class="column-heading">
+                <h3>Coffee</h3>
+                <p>Awakening Moments, One Sip at a Time</p>
+                <img
+                  class="reservation-flourish"
+                  src="./Images/Reservationflourish.png"
+                  alt=""
+                  width="150px"
+                />
               </section>
-              <span class="price">$30.00</span>
-            </section>
-            <section class="item">
-              <img
-                src="https://via.placeholder.com/150x100"
-                alt="Chocolate Cookies"
-              />
-              <section class="item-description">
-                <h3>Chocolate Cookies</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <section class="menu-item-bordered">
+                <img
+                  src="./Images/shake.png"
+                  alt="Chicken Salad Sandwich"
+                  width="150px"
+                  height="100px"
+                />
+                <section class="item-description">
+                  <p class="menu-title">Chicken Salad Sandwich</p>
+                  <p class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </section>
+                <span class="price">$30.00</span>
               </section>
-              <span class="price">$30.00</span>
-            </section>
-            <section class="item">
-              <img
-                src="https://via.placeholder.com/150x100"
-                alt="Chocolate Cookies"
-              />
-              <section class="item-description">
-                <h3>Chocolate Cookies</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <section class="menu-item-bordered">
+                <img
+                  src="./Images/Coffee.png"
+                  alt="Chicken Salad Sandwich"
+                  width="150px"
+                  height="100px"
+                />
+                <section class="item-description">
+                  <p class="menu-title">Chicken Salad Sandwich</p>
+                  <p class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </section>
+                <span class="price">$30.00</span>
               </section>
-              <span class="price">$30.00</span>
-            </section>
-            <section class="item">
-              <img
-                src="https://via.placeholder.com/150x100"
-                alt="Chocolate Cookies"
-              />
-              <section class="item-description">
-                <h3>Chocolate Cookies</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <section class="menu-item-bordered">
+                <img
+                  src="./Images/Crossiant.png"
+                  alt="Chicken Salad Sandwich"
+                  width="150px"
+                  height="100px"
+                />
+                <section class="item-description">
+                  <p class="menu-title">Chicken Salad Sandwich</p>
+                  <p class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </section>
+                <span class="price">$30.00</span>
               </section>
-              <span class="price">$30.00</span>
-            </section>
-            <section class="item">
-              <img
-                src="https://via.placeholder.com/150x100"
-                alt="Chocolate Cookies"
-              />
-              <section class="item-description">
-                <h3>Chocolate Cookies</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <section class="menu-item-no-border">
+                <img
+                  src="./Images/Muffin.png"
+                  alt="Chicken Salad Sandwich"
+                  width="150px"
+                  height="100px"
+                />
+                <section class="item-description">
+                  <p class="menu-title">Chicken Salad Sandwich</p>
+                  <p class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </section>
+                <span class="price">$30.00</span>
               </section>
-              <span class="price">$30.00</span>
             </section>
           </section>
         </section>
       </section>
-
       <article id="testimonials" class="blog-post">
         <section class="blog-post-cards">
           <section class="post">
@@ -265,8 +342,8 @@
       </article>
       <section id="reservations" class="reservation-card">
         <section class="reservation">
-          <h3>Make a Reservation</h3>
-          <h6>From Asia with Love</h6>
+          <h3 class="reservation-heading">Make a Reservation</h3>
+          <h6 class="caption-font">From Asia with Love</h6>
           <img
             class="reservation-flourish"
             src="./Images/Reservationflourish.png"
@@ -311,57 +388,58 @@
         </section>
       </section>
       <section class="google-image">
+        <section class="image-overlay"></section>
         <img src="./Images/GoogleMap.webp" alt="" />
       </section>
     </main>
     <footer id="contact">
-      <section>
+      <section class="contact-us">
         <h2>Contact Us</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
           consectetur maxime error odio, quisquam facere beatae aut fuga sunt
-          cumque, atque perspiciatis nam repellendus labore excepturi impedit id
-          ut molestiae.
+          cumque.
         </p>
       </section>
-      <section>
-        <h3>Contact Address</h3>
-        <p><i class="fas fa-map-marker-alt"></i> Address details</p>
-        <h3>Phone</h3>
-        <p><i class="fas fa-phone-alt"></i> +1234567890</p>
-        <h3>Email</h3>
-        <p><i class="fas fa-envelope"></i> example@email.com</p>
+      <section class="contact-hours">
+        <section class="contact-address">
+          <h3>Contact Address</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Address details</p>
+          <h3>Phone</h3>
+          <p><i class="fas fa-phone-alt"></i> +1234567890</p>
+          <h3>Email</h3>
+          <p><i class="fas fa-envelope"></i> example@email.com</p>
+        </section>
+        <section class="operating-hours">
+          <h3>Operating Hours</h3>
+          <p class="caption-font">With Bread All Sorrows are Less</p>
+          <img
+            class="reservation-flourish"
+            src="./Images/flourishwhite.png"
+            alt=""
+            width="150px"
+          />
+          <h3>Monday - Friday</h3>
+          <p>9:00 AM - 11:30 PM</p>
+          <h3>Saturday - Sunday</h3>
+          <p>11:00 AM - 11:30 PM</p>
+        </section>
       </section>
-      <section>
-        <h3>Operating Hours</h3>
-        <p>With Bread All Sorrows are Less</p>
-        <img
-          class="reservation-flourish"
-          src="./Images/Reservationflourish.png"
-          alt=""
-          width="210px"
-        />
-        <h3>Monday - Friday</h3>
-        <p>9:00 AM - 11:30 PM</p>
-        <img
-          class="reservation-flourish"
-          src="./Images/Reservationflourish.png"
-          alt=""
-          width="210px"
-        />
-        <h3>Saturday - Sunday</h3>
-        <p>11:00 AM - 11:30 PM</p>
-      </section>
+
       <img
         src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-bakery-logo-design-template-e979c6db88d6772062e4090687c00b7e_screen.jpg"
         alt="Logo"
+        width="150px"
       />
       <section>
         <ul class="footer-list">
-          <li>Reservations</li>
-          <li>Our Products</li>
-          <li>Our Story</li>
-          <li>Our Blog</li>
+          <li><a href="#reservations">Reservations</a></li>
+          <li class="footer-bar">|</li>
+          <li><a href="#menu">Our Products</a></li>
+          <li class="footer-bar">|</li>
+          <li><a href="#about">Our Story</a></li>
+          <li class="footer-bar">|</li>
+          <li><a href="#testimonials">Our Blog</a></li>
         </ul>
       </section>
       <p>&copy; Copyright Boulanger 2023. Educational purpose only.</p>
