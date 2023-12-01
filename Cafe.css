@@ -120,6 +120,7 @@ h1 {
   font-size: 30px;
   padding-top: 5px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .chef-message-heading {
@@ -532,4 +533,9 @@ p {
 
 #closeButton:hover {
   color: rgb(230, 199, 89); 
+}
+
+footer {
+  background-color: black;
+  color: white;
 }
