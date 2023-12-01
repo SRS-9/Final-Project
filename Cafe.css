@@ -18,6 +18,16 @@ header {
   text-transform: uppercase;
 }
 
+.desktop-menu-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.desktop-menu-list li a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
 .desktop-menu-list .logo {
   display: flex;
   align-items: center;
@@ -93,7 +103,7 @@ header {
 
 .hero {
   text-align: center;
-  padding-top: 2rem;
+  padding: 2rem;
 }
 
 h1 {
@@ -113,30 +123,26 @@ h1 {
 }
 
 .chef-message-heading {
-    font-size: 45px;
-    margin-bottom: 0px;
+  font-size: 45px;
+  margin-bottom: 0px;
 }
 
 .chef-message-quotation {
-    font-family: "Cedarville Cursive", cursive;
+  font-family: "Cedarville Cursive", cursive;
   font-size: 30px;
-  margin-top: 0px
-}
-
-.chef-message-description{
-    padding-right: 150px;
+  margin-top: 0px;
 }
 
 .image-container {
   position: relative;
-  width: 50%; 
+  width: 50%;
   margin: 0 auto;
 }
 
 .image-container img {
   width: 380px;
   height: 380px;
-  position: absolute; 
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: -400px;
@@ -144,26 +150,26 @@ h1 {
 }
 
 .chef-container {
-    display: flex;
-    align-items: center;
-    padding: 0 80px;
-  }
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
 
-  .chef-message {
-    flex: 1;
-  }
-  
-  .chef-image {
-    margin-right: 20px; 
-    flex: 1;
-  }
-  
-  .chef-image img {
-    max-width: 100%;
-    height: 600px;
-    width: 500px;
-    padding-left: 100px
-  }
+.chef-message {
+  flex: 1;
+}
+
+.chef-image {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.chef-image img {
+  max-width: 100%;
+  height: 600px;
+  width: 500px;
+  padding-left: 100px;
+}
 
 .carousel {
   position: relative;
@@ -173,28 +179,24 @@ h1 {
   padding-top: 15rem;
 }
 
-
 .carousel-cards {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-
 .bread-card {
   box-sizing: border-box;
   padding: 20px;
   text-align: center;
-  flex-shrink: 0; 
-  width: 100%; 
+  flex-shrink: 0;
+  width: 100%;
 }
-
 
 .carousel-dots {
   text-align: center;
   padding: 10px 0;
-  display: none; 
+  display: none;
 }
-
 
 .dot,
 .postDot {
@@ -218,7 +220,6 @@ h1 {
   background-color: #717171;
 }
 
-
 @media only screen and (min-width: 601px) {
   .carousel-cards {
     flex-direction: row;
@@ -226,13 +227,12 @@ h1 {
   }
 
   .bread-card {
-    width: auto; 
+    width: auto;
   }
 
   .carousel-dots {
-    display: none; 
+    display: none;
   }
-
 }
 
 .centered-content {
@@ -252,31 +252,42 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+.flourish3 img {
+  width: 100px;
+}
+
 @media only screen and (max-width: 600px) {
   .carousel-cards {
     flex-direction: column;
   }
   .carousel-dots {
-    display: block; 
+    display: block;
   }
 
   .chef-container {
     flex-direction: column;
     align-items: center;
+    padding: 0 40px;
   }
 
   .chef-image {
     margin-right: 0;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+  }
+
+  .chef-image img {
+    padding: 0;
+  }
+
+  .chef-message-description {
+    padding: 0;
   }
 }
 
-main {
+.menu {
   background: url("./Images/cafe.jpg") no-repeat center center;
   background-size: cover;
-  height: 1100px;
   text-align: center;
-  margin-bottom: 400px;
 }
 
 .menu-card {
@@ -285,7 +296,7 @@ main {
   position: relative;
   padding: 1rem;
   border-radius: 5px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .menu-card::before {
@@ -296,9 +307,8 @@ main {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 5px; 
+  border-radius: 5px;
 }
-
 
 .menu-card > * {
   position: relative;
@@ -373,10 +383,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 4rem;
 }
 
 .blog-post-cards {
-  max-width: 800px;  
+  max-width: 800px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .post img {
@@ -391,23 +408,22 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 50px; 
-  background-image: url('./Images/Wheat.png'); 
+  padding-bottom: 50px;
+  background-image: url("./Images/formbackground.jpg");
   background-size: cover;
   background-position: top right;
 }
 
 .reservation-card::before {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .reservation {
   text-align: center;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .reservation-flourish {
-  width: 100px;
   margin: 0px;
 }
 
@@ -416,7 +432,9 @@ footer {
   font-size: 40px;
 }
 
-.reservation h6, img, p {
+.reservation h6,
+img,
+p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -450,8 +468,9 @@ footer {
   color: #999;
 }
 
-.form-section input, .form-section select {
-  width: calc(100% - 20px); 
+.form-section input,
+.form-section select {
+  width: calc(100% - 20px);
   border: none;
   outline: none;
   border-bottom: 1px solid #ccc;
@@ -459,7 +478,8 @@ footer {
   background: transparent;
 }
 
-.form-section input:focus, .form-section select:focus {
+.form-section input:focus,
+.form-section select:focus {
   border-bottom: 1px solid #e1c122;
 }
 
@@ -474,15 +494,15 @@ footer {
 
 .btn {
   display: block;
-      width: 100%;
-      padding: 8px 0;
-      text-align: center;
-      background-color: #f6f6f3;
-      color: #0c0c0b;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+  background-color: #f6f6f3;
+  color: #0c0c0b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -490,12 +510,12 @@ footer {
 }
 
 .google-image {
-  width: 100%; 
+  width: 100%;
   overflow: hidden;
 }
 
 .google-image img {
-  width: 100%; 
+  width: 100%;
   display: block;
 }
 

@@ -87,26 +87,37 @@ document
   document
   .getElementById("reservationForm")
   .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); 
 
-    // Hide the form
     document.getElementById("reservationForm").style.display = "none";
 
-    // Show the thank you message
     document.getElementById("thankYouMessage").style.display = "block";
 
-    // Add event listener to the close button
     document.getElementById("closeButton").addEventListener("click", function () {
-      // Hide the thank you message
-      document.getElementById("thankYouMessage").style.display = "none";
+      
+    document.getElementById("thankYouMessage").style.display = "none";
 
-      // Show the form again
-      document.getElementById("reservationForm").style.display = "block";
+    document.getElementById("reservationForm").style.display = "block";
 
-      document.getElementById("reservationForm").reset();
+    document.getElementById("reservationForm").reset();
     });
   });
 
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+  
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+  
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    });
+  });
 
 
 
