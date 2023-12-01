@@ -498,3 +498,18 @@ footer {
   width: 100%; 
   display: block;
 }
+
+#closeButton {
+  position: absolute;
+  top: 315px; 
+  right: 530px; 
+  background-color: transparent; 
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+#closeButton:hover {
+  color: rgb(230, 199, 89); 
+}

@@ -84,6 +84,28 @@ document
     document.querySelector(".mobile-menu-list").classList.toggle("show");
   });
 
+  document
+  .getElementById("reservationForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Hide the form
+    document.getElementById("reservationForm").style.display = "none";
+
+    // Show the thank you message
+    document.getElementById("thankYouMessage").style.display = "block";
+
+    // Add event listener to the close button
+    document.getElementById("closeButton").addEventListener("click", function () {
+      // Hide the thank you message
+      document.getElementById("thankYouMessage").style.display = "none";
+
+      // Show the form again
+      document.getElementById("reservationForm").style.display = "block";
+
+      document.getElementById("reservationForm").reset();
+    });
+  });
 
 
 

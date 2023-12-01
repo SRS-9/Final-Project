@@ -269,7 +269,7 @@
         <p><b>Address:</b> Online</p>
       </section>
       <section class="card">
-        <form action="#" method="post">
+        <form id="reservationForm">
           <section class="form-section">
             <input type="text" id="name" name="name" required />
             <label for="name">Name</label>
@@ -288,6 +288,15 @@
           </section>
           <button type="submit" class="btn">Make Reservation</button>
         </form>
+        <section
+          id="thankYouMessage"
+          style="display: none"
+          class="thankYouMessage"
+        >
+          <button id="closeButton">X</button>
+          <h2>Thank You!</h2>
+          <p>Your reservation has been submitted successfully.</p>
+        </section>
       </section>
     </section>
     <section class="google-image">
