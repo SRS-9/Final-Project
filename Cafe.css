@@ -665,3 +665,10 @@ h3 {
 .footer-bar {
   color: rgb(149, 149, 149);
 }
+
+.social-icons li {
+ list-style: none;
+ display: inline-block;
+ padding: 5px;
+ color: #9b9b9b;
+}
