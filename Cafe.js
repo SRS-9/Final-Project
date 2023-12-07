@@ -119,6 +119,61 @@ document
     });
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartCount = document.querySelector('.cart-count');
+    const cartModalOverlay = document.getElementById('cartModalOverlay');
+    const cartItemsList = document.getElementById('cartItemsList');
+    const cartTotal = document.getElementById('cartTotal');
+    const closeCartButton = document.getElementById('closeCart');
+  
+    let total = 0;
+  
+    function updateCartCount(count) {
+      cartCount.textContent = count;
+    }
+  
+    function updateCartModal(itemName, itemPrice) {
+      const cartItem = document.createElement('li');
+      cartItem.textContent = `${itemName} - $${itemPrice.toFixed(2)}`;
+  
+      const removeButton = document.createElement('button');
+      removeButton.textContent = 'Remove';
+      removeButton.classList.add('remove-from-cart');
+      removeButton.addEventListener('click', () => {
+        cartItemsList.removeChild(cartItem); 
+        total -= itemPrice;
+        cartTotal.textContent = `$${total.toFixed(2)}`;
+        updateCartCount(cartItemsList.children.length); 
+      });
+  
+      cartItem.appendChild(removeButton);
+      cartItemsList.appendChild(cartItem);
+  
+      total += itemPrice;
+      cartTotal.textContent = `$${total.toFixed(2)}`;
+      updateCartCount(cartItemsList.children.length); 
+    }
+  
+    addToCartButtons.forEach(addButton => {
+      addButton.addEventListener('click', () => {
+        const menuItem = addButton.parentNode.querySelector('.menu-title').textContent;
+        const itemPrice = parseFloat(addButton.parentNode.querySelector('.price').textContent.slice(1));
+        updateCartModal(menuItem, itemPrice); 
+      });
+    });
+  
+    document.getElementById('shopping-cart').addEventListener('click', () => {
+      cartModalOverlay.style.display = 'block';
+    });
+  
+    closeCartButton.addEventListener('click', () => {
+      cartModalOverlay.style.display = 'none';
+    });
+  });
+  
+  
+  
 
 
 
