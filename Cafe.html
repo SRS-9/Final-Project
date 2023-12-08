@@ -23,6 +23,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./Cafe.css" />
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpGdLdESV8xNYJeVd1BxMjlsTTj92LzdA&callback=console.debug&libraries=maps,marker&v=beta"
+    ></script>
     <title>Final Project Cafe</title>
   </head>
   <body>
@@ -443,8 +447,10 @@
         </section>
       </section>
       <section class="google-image">
-        <section class="image-overlay"></section>
-        <img src="./Images/GoogleMap.webp" alt="" />
+        <gmp-map center="-37.8195,144.9508" zoom="14" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="-37.8195,144.9508" title="My location">
+          </gmp-advanced-marker>
+        </gmp-map>
       </section>
     </main>
     <footer id="contact">
