@@ -31,6 +31,7 @@ header {
 }
 
 .desktop-menu-list li a:hover,
+.mobile-menu-list li a:hover,
 .footer-list li a:hover {
   color: orange;
   text-decoration: underline;
@@ -203,11 +204,11 @@ h1 {
   .carousel-cards {
     flex-direction: row;
     justify-content: center;
-    gap: 5px;
+    gap: 130px;
   }
 
   .bread-card {
-    width: auto;
+    max-width: 300px;
   }
 
   .carousel-dots {
@@ -679,6 +680,7 @@ h3 {
   .image-container img {
     width: 350px;
     height: 350px;
+    bottom: -375px;
   }
   .desktop-menu {
     display: none;
@@ -706,6 +708,10 @@ h3 {
 
   .add-to-cart:hover {
     color: #b85c38; 
+  }
+
+  .carousel {
+    padding-top: 15rem;
   }
 
   .carousel-cards {
